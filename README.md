@@ -6,7 +6,7 @@ O seu desafio é criar uma página similar a do Airbnb através do consumo da AP
 
 Resultados esperados
 Tela com cards contendo:
-
+https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72
 Imagem
 Tipo de propriedade
 Preço
