@@ -45,8 +45,8 @@ request.onload = function() {
     }
     btnAction(first,  page = 0)
     btnAction(last,  page = cards.length - 3)
-
   
+    
     next.addEventListener('click', ()=>{
       page == cards.length - 3? (page = 0) : (page += 3);
       console.log(page)
@@ -62,9 +62,9 @@ request.onload = function() {
     })
 
   } else {
-    const errorMessage = document.createElement('marquee')
-    errorMessage.textContent = `Gah, it's not working!`
-    app.appendChild(errorMessage)
+      const errorMessage = document.createElement('label')
+      errorMessage.textContent = 'it\'s not working!'
+      app.appendChild(errorMessage)
   }
 }
 
@@ -83,7 +83,7 @@ const createCards = (cards, houses) => {
     let house = houses[index]
     const card = document.createElement('div')
     card.setAttribute('class', 'card')
-
+    console.log(house)
     const img = document.createElement('img')
     img.src = house.photo
 
@@ -94,10 +94,15 @@ const createCards = (cards, houses) => {
     house.name = house.name.substring(0, 300)
     p.textContent = `${house.name}...`
 
+    const price = document.createElement('p')
+    price.textContent = `R$ ${house.price}`
+
+
     container.appendChild(card)
     card.appendChild(img)
     card.appendChild(h1)
     card.appendChild(p)
+    card.appendChild(price)
     card.style.display = 'none';
     cards.push(card);
   }  
