@@ -115,27 +115,3 @@ request.onload = function() {
 request.send()
 
 })(window, document);
-
-
-
-
-
-
-
-  /*
-  let houses = []
-
-  var request = new XMLHttpRequest()
-  request.open('GET', 'https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72', true)
-  request.onload = function () {
-
-    let data = JSON.parse(this.response)
-    
-    data.forEach(house => {
-      houses.push(house)
-    })
-  }
-  console.log(houses)
-  request.send()
-
-  */

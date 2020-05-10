@@ -1,12 +1,10 @@
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
-        height: 8em;
-      }
+       #mapid { height: 180px; }
 
       
       @media screen and (max-width: 800px) {
-        #map{
-          height: 1em;
+        #mapid{
+          height: 100px;
         }
       }
