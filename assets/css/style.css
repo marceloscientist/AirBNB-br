@@ -6,7 +6,24 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  
 }
+
+
+/*
+.container2 {
+  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+*/
+
+
 
 .card {
   margin: 1rem;
